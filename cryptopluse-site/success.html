@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to CryptoPluse!</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .success-box{max-width:600px;margin:80px auto;background:#fff;border:1px solid #e6e6e6;border-radius:12px;padding:40px;text-align:center}
+    .success-box h1{color:#0A5DBF;margin-bottom:12px}
+    .api-key-display{background:#f0f4f8;border:2px dashed #0A5DBF;border-radius:8px;padding:16px;margin:20px 0;font-family:monospace;font-size:16px;word-break:break-all}
+    .warn{color:#c00;font-size:13px;margin-top:8px}
+    .next-steps{text-align:left;margin-top:24px}
+    .next-steps li{margin-bottom:8px}
+    .btn-primary{display:inline-block;background:#0A5DBF;color:#fff;padding:12px 20px;border-radius:6px;text-decoration:none;font-weight:700;margin-top:16px}
+  </style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <div class="logo"><span class="logo-crypto">Crypto</span><span class="logo-pluse">Pluse</span></div>
+  </div>
+</header>
+<div class="success-box">
+  <h1>🎉 You're In!</h1>
+  <p>Welcome to CryptoPluse. Your account has been created successfully.</p>
+  <p><strong>Your API Key:</strong></p>
+  <div class="api-key-display" id="api-key-box">Loading...</div>
+  <p class="warn">⚠️ Save this key now. It will not be shown again.</p>
+  <div class="next-steps">
+    <h3>Next Steps</h3>
+    <ol>
+      <li>Save your API key somewhere secure</li>
+      <li>Check your email for a welcome guide</li>
+      <li>Try your first API call:
+        <pre style="background:#f6f7fb;padding:8px;border-radius:4px;font-size:13px;overflow-x:auto">curl "https://www.cryptopluse.io/api/v1/price_index.json?api_key=YOUR_KEY"</pre>
+      </li>
+      <li>Explore the <a href="/docs">API documentation</a></li>
+    </ol>
+  </div>
+  <a href="/" class="btn-primary">Back to Home</a>
+</div>
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const key = params.get('api_key');
+  if (key) document.getElementById('api-key-box').textContent = key;
+  else document.getElementById('api-key-box').textContent = 'Key not found — check your email.';
+</script>
+</body>
+</html>

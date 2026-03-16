@@ -1,0 +1,11 @@
+{
+  "keys": {
+    "pilot-demo-key-001": {
+      "owner": "demo_user",
+      "plan": "pilot",
+      "daily_limit": 100,
+      "created": "2026-03-16",
+      "active": true
+    }
+  }
+}

@@ -1,0 +1,13 @@
+Subject: Tips to optimize CryptoPluse data for your workflow
+
+Hi {{name}},
+
+A few optimization tips:
+- Combine price_index with your dashboards for cross-asset views
+- Use daily digest alongside a watchlist in your internal tools
+- If you hit quota, we can scale plans or offer batch digest exports
+
+Need a quick setup consultation? Reply here.
+
+Best,
+CryptoPluse Team

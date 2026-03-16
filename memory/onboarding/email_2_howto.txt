@@ -1,0 +1,19 @@
+Subject: How to use CryptoPluse data securely
+
+Hi {{name}},
+
+Welcome again! Here’s a quick guide to using CryptoPluse data:
+- Authenticate with your API key: GET /api/v1/price_index.json?api_key=YOUR_KEY
+- Retrieve daily digest: GET /api/v1/digests/daily.csv?api_key=YOUR_KEY
+- Rate limits: 1000 requests/day per key
+
+Code samples:
+- curl:
+  curl "https://www.cryptopluse.io/api/v1/price_index.json?api_key=YOUR_KEY"
+- Python:
+  import requests
+  r = requests.get("https://www.cryptopluse.io/api/v1/price_index.json?api_key=YOUR_KEY")
+  print(r.json())
+
+Best,
+CryptoPluse Team

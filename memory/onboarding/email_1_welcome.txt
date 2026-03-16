@@ -1,0 +1,26 @@
+Subject: Welcome to CryptoPluse — Your API Key is Ready
+
+Hi {{name}},
+
+Welcome to CryptoPluse! Your account is live.
+
+Your API Key: {{api_key}}
+
+Quick Start:
+1. Save your API key securely — it won't be shown again.
+2. Try your first call:
+   curl "https://www.cryptopluse.io/api/v1/price_index.json?api_key={{api_key}}"
+3. Retrieve your daily digest:
+   curl "https://www.cryptopluse.io/api/v1/digests/daily.csv?api_key={{api_key}}"
+
+Plan: {{plan}}
+Billing: {{billing}}
+Daily request limit: {{daily_limit}}
+
+Check your usage anytime:
+https://www.cryptopluse.io/api/v1/usage?api_key={{api_key}}
+
+Questions? Just reply to this email.
+
+Best,
+CryptoPluse Team

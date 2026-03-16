@@ -1,0 +1,7 @@
+Subject: CryptoPluse — renewal options
+
+Hi {{name}},
+
+Your CryptoPluse access is up for renewal. If you want to adjust the plan, switch to annual billing and save 20%, or scale up your API usage.
+
+Thank you for choosing CryptoPluse.
