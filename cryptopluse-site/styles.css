@@ -1,0 +1,38 @@
+:root{--blue:#0A5DBF;--blue2:#1E7AD9;--dark:#2E3A46;--mid:#4A5A6A;--cyan:#00A6D6;--bg:#f6f7fb;}
+*{box-sizing:border-box}html,body{margin:0;padding:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:#111}
+.container{width:90%;max-width:1040px;margin:0 auto}
+header{background:#fff;border-bottom:1px solid #e5e5e5}
+header .container{display:flex;align-items:center;justify-content:space-between;padding:16px 0}
+.logo{font-family:Impact,Arial Black,sans-serif;font-weight:700;font-size:28px;color:var(--blue)}
+.logo .logo-crypto{color:var(--blue)}
+.logo .logo-pluse{color:var(--blue2)}
+nav a{margin:0 12px;text-decoration:none;color:#333;font-weight:600;font-size:14px}
+.hero{padding:40px 0;background:#fff}
+.hero h1{font-size:32px;margin:0 0 8px}
+.hero .subtitle{color:#555;max-width:700px}
+.btn-primary{display:inline-block;background:var(--blue);color:#fff;padding:12px 20px;border-radius:6px;text-decoration:none;font-weight:700}
+section{padding:48px 0}
+.coins .coin-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:12px}
+.coin-card{background:#fff;border:1px solid #e6e6e6;border-radius:8px;padding:12px;text-align:center}
+.features .feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.feature-card{background:#fff;border:1px solid #e6e6e6;border-radius:8px;padding:14px}
+.digests .digest-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.digest-card{background:#fff;border:1px solid #e6e6e6;border-radius:8px;padding:14px}
+.pricing{background:#fff}
+.plan-card{border:1px solid #e6e6e6;border-radius:8px;padding:16px;flex:1}
+.plan-card .price{font-size:28px;font-weight:700}
+.btn-plan{display:inline-block;margin-top:8px;background:var(--blue);color:#fff;border-radius:6px;padding:10px 14px;text-decoration:none}
+.signup{background:#fff}
+.signup-form{display:flex;flex-wrap:wrap;gap:10px}
+.signup-form input,.signup-form select,.signup-form textarea{padding:10px;border:1px solid #ddd;border-radius:6px;min-width:180px}
+footer{background:#111;color:#ddd;padding:20px 0;margin-top:40px}
+footer .container{display:flex;flex-direction:column;gap:6px}
+.logo-small{font-size:20px;font-weight:700}
+@media (max-width: 900px){
+  .coins .coin-grid{grid-template-columns:repeat(3,1fr)}
+  .features .feature-grid{grid-template-columns:1fr 1fr 1fr}
+}
+@media (max-width: 600px){
+  .coins .coin-grid{grid-template-columns:repeat(2,1fr)}
+  .features .feature-grid{grid-template-columns:1fr}
+}

@@ -1,0 +1,9 @@
+[
+  {"id":"bitcoin","symbol":"btc","name":"Bitcoin"},
+  {"id":"ethereum","symbol":"eth","name":"Ethereum"},
+  {"id":"solana","symbol":"sol","name":"Solana"},
+  {"id":"cardano","symbol":"ada","name":"ADA"},
+  {"id":"ripple","symbol":"xrp","name":"XRP"},
+  {"id":"binancecoin","symbol":"bnb","name":"BNB"},
+  {"id":"stellar","symbol":"xlm","name":"XLM"}
+]

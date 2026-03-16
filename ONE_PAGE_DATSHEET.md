@@ -1,0 +1,33 @@
+Seven-coin Crypto Scrape Data Package
+Overview
+- Snapshot: BTC, ETH, SOL, XRP, ADA, BNB, XLM with price, 24h change, volume, market cap
+- Exports: CSV + JSON, with a time-stamp on fetch
+- Digest options: daily/weekly summaries
+- Target buyers: advanced retail traders, professional funds, institutions
+
+Data schema (CSV)
+coin,price,change_24h,volume,market_cap
+btc,72747,2.22,28494751381,1454486243684
+eth,2179.37,3.94,14260921478,263046774014
+sol,92.09,4.57,3102583439,52559110849
+xrp,1.45,2.97,1987415981,88548698903
+ada,0.2696,2.57,356294586,9924259900
+bnb,674.32,2.52,771466710,91875455467
+xlm,0.1689,1.51,87512360,5570590177
+
+Data schema (JSON)
+{
+  "fetched_at": "YYYY-MM-DDTHH:MM:SSZ",
+  "btc": {"price":...,"change_24h":...,"volume":...,"market_cap":...},
+  ...
+}
+
+Delivery & licensing (draft)
+- Per-seat license; annual discount 20% for annual billing
+- Exports via files; API access is negotiable
+- Data-use for backtesting/analytics; redistribution requires additional licensing
+
+Next steps
+- Confirm final pricing and license terms
+- Provide onboarding and delivery integration options
+- Prepare installation guide and sample API client

@@ -1,0 +1,10 @@
+{
+  "fetched_at": "2026-03-15T23:47:46Z",
+  "btc": {"price":72747,"change_24h":2.22,"volume":28494751381,"market_cap":1454486243684},
+  "eth": {"price":2179.37,"change_24h":3.94,"volume":14260921478,"market_cap":263046774014},
+  "sol": {"price":92.09,"change_24h":4.57,"volume":3102583439,"market_cap":52559110849},
+  "xrp": {"price":1.45,"change_24h":2.97,"volume":1987415981,"market_cap":88548698903},
+  "ada": {"price":0.2696,"change_24h":2.57,"volume":356294586,"market_cap":9924259900},
+  "bnb": {"price":674.32,"change_24h":2.52,"volume":771466710,"market_cap":91875455467},
+  "xlm": {"price":0.1689,"change_24h":1.51,"volume":87512360,"market_cap":5570590177}
+}
