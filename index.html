@@ -47,6 +47,28 @@ Daily/weekly digests (CSV/JSON)
 
 <footer style="padding:24px 0; text-align:center; color:#777;">
 Contact: <a href="mailto:r3shaver@cryptoplus.io">r3shaver@cryptoplus.io</a> | © 2026 CryptoPluse
+cat > /tmp/pricing_patch.html << 'EOF'
+<section id="pricing" class="pricing" aria-label="Pricing" style="padding:48px 0;">
+  <div class="container">
+    <h2>Pricing</h2>
+    <p style="margin-bottom:16px;">Per-seat API access. Save 20% with annual billing.</p>
+    <ul style="list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:16px;">
+      <li style="flex:1 1 220px;background:#fff;border:1px solid #e6e6e6;padding:16px;border-radius:8px;">
+        <strong>Retail Starter</strong><br>$59/mo<br>1 API seat, daily digest
+      </li>
+      <li style="flex:1 1 220px;background:#fff;border:1px solid #0A5DBF;padding:16px;border-radius:8px;">
+        <strong>Retail Growth</strong><br>$199/mo<br>2 API seats, paper-trade access
+      </li>
+      <li style="flex:1 1 220px;background:#fff;border:1px solid #e6e6e6;padding:16px;border-radius:8px;">
+        <strong>Professional</strong><br>$499/mo<br>5 API seats, monthly SLA
+      </li>
+      <li style="flex:1 1 220px;background:#fff;border:1px solid #e6e6e6;padding:16px;border-radius:8px;">
+        <strong>Institutional</strong><br>$1,000/mo<br>Unlimited seats, white-label
+      </li>
+    </ul>
+  </div>
+</section>
+EOF  
 </footer>
 </body>
 </html>
