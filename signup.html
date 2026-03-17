@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CryptoPluse Sign Up</title>
+</head>
+<body>
+  <h1>Join CryptoPluse</h1>
+  <form action="/signup" method="post">
+    <label>Name</label><br>
+    <input type="text" name="name" required><br>
+    <label>Email</label><br>
+    <input type="email" name="email" required><br>
+    <label>Plan</label><br>
+    <select name="plan" required>
+      <option value="pilot">Pilot</option>
+      <option value="starter">Starter</option>
+      <option value="growth">Growth</option>
+      <option value="professional">Professional</option>
+      <option value="institutional">Institutional</option>
+    </select><br>
+    <label>Billing</label><br>
+    <select name="billing" required>
+      <option value="monthly">Monthly</option>
+      <option value="annual">Annual</option>
+    </select><br><br>
+    <button type="submit">Create API Key</button>
+  </form>
+</body>
+</html>
