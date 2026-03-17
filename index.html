@@ -1,244 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CryptoPluse — Crypto Signal Data for Traders</title>
-  <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CryptoPluse – Seven-coin market intelligence</title>
+<link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-
-<!-- HEADER -->
 <header>
-  <div class="container">
-    <div class="logo"><span class="logo-crypto">Crypto</span><span class="logo-pluse">Pluse</span></div>
-    <nav>
-      <a href="#features">Features</a>
-      <a href="#digests">Digests</a>
-      <a href="#pricing">Pricing</a>
-      <a href="#signup">Get Started</a>
-    </nav>
-  </div>
+<div class="container">
+<div class="logo"><span class="logo-crypto">Crypto</span><span class="logo-pluse">Pluse</span></div>
+</div>
 </header>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="container">
-    <h1>Clean, time-stamped crypto signal data — built for traders who move fast.</h1>
-    <p class="subtitle">Seven-coin market intelligence with volume spike detection, paper-trade simulation, and daily or weekly digests. CSV + JSON exports, per-seat API access.</p>
-    <a href="#signup" class="btn-primary">Start Your Free Trial</a>
-  </div>
+<section class="hero" aria-label="Hero">
+<div class="container" style="text-align:center; padding:48px 0;">
+<h1 style="margin:0 0 12px; font-size:38px; color:#0A5DBF;">CryptoPluse</h1>
+<p style="font-size:18px; color:#555; margin:0 auto 16px; max-width:800px;">
+Clean, time-stamped crypto signal data — built for traders who move fast.
+</p>
+<a href="/signup.html" class="btn-primary" style="margin-right:12px;">Get Started</a>
+<a href="/contact.html" class="btn-primary" style="background:#1a6bd6;border-color:#1a6bd6;">Contact CryptoPluse</a>
+</div>
 </section>
 
-<!-- COINS -->
-<section class="coins">
-  <div class="container">
-    <h2>Currently Tracking</h2>
-    <div class="coin-grid">
-      <div class="coin-card">BTC<span>Bitcoin</span></div>
-      <div class="coin-card">ETH<span>Ethereum</span></div>
-      <div class="coin-card">SOL<span>Solana</span></div>
-      <div class="coin-card">XRP<span>Ripple</span></div>
-      <div class="coin-card">ADA<span>Cardano</span></div>
-      <div class="coin-card">BNB<span>Binance</span></div>
-      <div class="coin-card">XLM<span>Stellar</span></div>
-    </div>
-    <p class="coin-note">More coins coming soon. Data refreshed every 5 minutes.</p>
-  </div>
+<section id="features" class="features" aria-label="Features">
+<div class="container">
+<h2>What you get</h2>
+<ul style="list-style:none; padding:0; display:flex; flex-wrap:wrap; gap:16px;">
+<li style="flex:1 1 260px; min-width:260px; background:#fff; border:1px solid #e6e6e6; padding:14px; border-radius:8px;">
+Price spikes (1% threshold, 24h view)
+</li>
+<li style="flex:1 1 260px; min-width:260px; background:#fff; border:1px solid #e6e6e6; padding:14px; border-radius:8px;">
+5‑sample volume moving averages
+</li>
+<li style="flex:1 1 260px; min-width:260px; background:#fff; border:1px solid #e6e6e6; padding:14px; border-radius:8px;">
+Daily/weekly digests (CSV/JSON)
+</li>
+</ul>
+</div>
 </section>
 
-<!-- FEATURES -->
-<section id="features" class="features">
-  <div class="container">
-    <h2>What You Get</h2>
-    <div class="feature-grid">
-      <div class="feature-card">
-        <h3>Price Spike Detection</h3>
-        <p>1% threshold monitoring across all tracked coins. Logged automatically with timestamps.</p>
-      </div>
-      <div class="feature-card">
-        <h3>Volume Spike Engine</h3>
-        <p>5-sample rolling average with 2x spike detection. Per-coin and consolidated logs.</p>
-      </div>
-      <div class="feature-card">
-        <h3>Paper-Trade Simulator</h3>
-        <p>Mock trade entries generated when signals fire. Validate strategies before risking capital.</p>
-      </div>
-      <div class="feature-card">
-        <h3>CSV + JSON Exports</h3>
-        <p>Clean, structured data ready for backtesting, dashboards, or direct API ingestion.</p>
-      </div>
-      <div class="feature-card">
-        <h3>Per-Seat API Access</h3>
-        <p>Dedicated API keys per user. Scale from individual traders to institutional desks.</p>
-      </div>
-      <div class="feature-card">
-        <h3>Watch-List Alerts</h3>
-        <p>Configurable alert thresholds with optional Telegram/webhook delivery.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- DIGESTS -->
-<section id="digests" class="digests">
-  <div class="container">
-    <h2>Digest Options</h2>
-    <div class="digest-grid">
-
-      <div class="digest-card">
-        <h3>Daily Digest</h3>
-        <p>Delivered every morning. Covers the prior 24 hours of activity.</p>
-        <div class="sample-box">
-          <h4>Sample CSV</h4>
-          <pre>coin,price,change_24h,volume,market_cap
-btc,72747,2.22,28494751381,1454486243684
-eth,2179.37,3.94,14260921478,263046774014
-sol,92.09,4.57,3102583439,52559110849
-xrp,1.45,2.97,1987415981,88548698903
-ada,0.2696,2.57,356294586,9924259900
-bnb,674.32,2.52,771466710,91875455467
-xlm,0.1689,1.51,87512360,5570590177</pre>
-          <h4>Sample JSON</h4>
-          <pre>{
-  "fetched_at": "2026-03-15T23:47:46Z",
-  "btc": {"price":72747,"change_24h":2.22,
-          "volume":28494751381},
-  "eth": {"price":2179.37,"change_24h":3.94,
-          "volume":14260921478}
-}</pre>
-        </div>
-      </div>
-
-      <div class="digest-card">
-        <h3>Weekly Digest</h3>
-        <p>Delivered every Monday. Summarizes the full week with trend indicators.</p>
-        <div class="sample-box">
-          <h4>Sample CSV</h4>
-          <pre>coin,avg_price,avg_change,peak_volume,spikes
-btc,71832,1.89,31200000000,2
-eth,2145,2.31,15800000000,3
-sol,89.44,3.12,3500000000,1
-xrp,1.42,2.15,2100000000,1
-ada,0.265,1.88,400000000,0
-bnb,668,1.95,820000000,0
-xlm,0.166,1.22,95000000,0</pre>
-          <h4>Sample TXT Summary</h4>
-          <pre>CryptoPluse Weekly — Mar 10-16, 2026
-Top mover: SOL (+4.57% peak)
-Volume spikes: 7 total across 4 coins
-Highest volume: BTC ($31.2B peak)
-Alerts triggered: 5</pre>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- PRICING -->
-<section id="pricing" class="pricing">
-  <div class="container">
-    <h2>Pricing</h2>
-    <p class="pricing-note">Per-seat API access. All plans include CSV + JSON exports and digest delivery.<br><strong>Save 20% with annual billing.</strong></p>
-    <div class="pricing-grid">
-
-      <div class="plan-card">
-        <h3>Retail Starter</h3>
-        <div class="price">$59<span>/mo</span></div>
-        <div class="annual">$47/mo billed annually</div>
-        <ul>
-          <li>1 API seat</li>
-          <li>Daily or weekly digest (CSV)</li>
-          <li>Price + volume spike logs</li>
-          <li>Email support</li>
-        </ul>
-        <a href="#signup" class="btn-plan">Get Started</a>
-      </div>
-
-      <div class="plan-card featured">
-        <h3>Retail Growth</h3>
-        <div class="price">$199<span>/mo</span></div>
-        <div class="annual">$159/mo billed annually</div>
-        <ul>
-          <li>Up to 2 API seats</li>
-          <li>Daily + weekly digests</li>
-          <li>Paper-trade simulator access</li>
-          <li>Priority email support</li>
-        </ul>
-        <a href="#signup" class="btn-plan">Get Started</a>
-      </div>
-
-      <div class="plan-card">
-        <h3>Professional</h3>
-        <div class="price">$499<span>/mo</span></div>
-        <div class="annual">$399/mo billed annually</div>
-        <ul>
-          <li>Up to 5 API seats</li>
-          <li>All digest formats</li>
-          <li>Monthly SLA guarantee</li>
-          <li>Custom alert thresholds</li>
-        </ul>
-        <a href="#signup" class="btn-plan">Get Started</a>
-      </div>
-
-      <div class="plan-card">
-        <h3>Institutional</h3>
-        <div class="price">$1,000<span>/mo</span></div>
-        <div class="annual">$800/mo billed annually</div>
-        <ul>
-          <li>Unlimited API seats</li>
-          <li>Dedicated support + onboarding</li>
-          <li>Custom data schemas</li>
-          <li>White-label options</li>
-        </ul>
-        <a href="#signup" class="btn-plan">Contact Sales</a>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- SIGNUP -->
-<section id="signup" class="signup">
-  <div class="container">
-    <h2>Get Started with CryptoPluse</h2>
-    <p>Enter your details and we'll set up your account within 24 hours.</p>
-    <form action="mailto:sales@cryptopluse.com" method="POST" enctype="text/plain" class="signup-form">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <select name="plan" required>
-        <option value="">Select a Plan</option>
-        <option value="starter">Retail Starter — $59/mo</option>
-        <option value="growth">Retail Growth — $199/mo</option>
-        <option value="professional">Professional — $499/mo</option>
-        <option value="institutional">Institutional — $1,000/mo</option>
-      </select>
-      <select name="digest">
-        <option value="">Preferred Digest</option>
-        <option value="daily">Daily Digest</option>
-        <option value="weekly">Weekly Digest</option>
-        <option value="both">Both Daily + Weekly</option>
-      </select>
-      <select name="billing">
-        <option value="">Billing Cycle</option>
-        <option value="monthly">Monthly</option>
-        <option value="annual">Annual (save 20%)</option>
-      </select>
-      <textarea name="message" placeholder="Anything else we should know?" rows="3"></textarea>
-      <button type="submit" class="btn-primary">Submit Request</button>
-    </form>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer>
-  <div class="container">
-    <div class="logo-small"><span class="logo-crypto">Crypto</span><span class="logo-pluse">Pluse</span></div>
-    <p>&copy; 2026 CryptoPluse. All rights reserved.</p>
-    <p class="footer-note">Data sourced from public APIs. Per-seat licensing. Redistribution requires additional agreement.</p>
-  </div>
+<footer style="padding:24px 0; text-align:center; color:#777;">
+© 2026 CryptoPluse
 </footer>
-
 </body>
 </html>
